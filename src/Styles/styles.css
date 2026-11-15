@@ -1,0 +1,11 @@
+@import "./variables.css";
+@import "./global.css";
+@import "./navbar.css";
+@import "./home.css";
+@import "./menu.css";
+@import "./product-detail.css";
+@import "./about.css";
+@import "./contact.css";
+@import "./cart.css";
+@import "./footer.css";
+@import "./responsive.css";

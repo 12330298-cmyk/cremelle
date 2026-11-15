@@ -1,0 +1,4 @@
+The components in this folder (SplitText, ScrollVelocity, SpotlightCard, Magnet) come from
+React Bits by David Haz – https://github.com/DavidHDev/react-bits
+Licensed under MIT + Commons Clause (see the repository's LICENSE.md).
+Copyright (c) 2026 David Haz. Used here as part of a website for a university course project.

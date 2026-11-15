@@ -1,0 +1,62 @@
+/* ABOUT */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3.2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.about-art {
+  display: grid;
+  place-items: center;
+  padding: 2.4rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.about-art img {
+  width: min(300px, 100%);
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
+.about h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  color: var(--brown-soft);
+}
+
+/* FEATURES */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem !important;
+}
+
+.feature-icon {
+  font-size: 2.6rem;
+}
+
+.feature h3 {
+  margin: 0.5rem 0 0.4rem;
+  font-size: 1.6rem;
+}
+
+.feature p {
+  color: var(--brown-soft);
+  font-size: 0.95rem;
+}

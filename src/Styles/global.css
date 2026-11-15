@@ -1,0 +1,167 @@
+/* BASE */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--brown);
+  line-height: 1.65;
+  background-color: var(--paper);
+
+  background-image:
+    radial-gradient(
+      ellipse 600px 420px at 8% 4%,
+      rgba(210, 115, 59, 0.10),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 520px 380px at 96% 30%,
+      rgba(140, 74, 68, 0.08),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 560px 400px at 20% 78%,
+      rgba(196, 154, 90, 0.10),
+      transparent 70%
+    );
+
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* PAPER GRAIN */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.35;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.3 0 0 0 0 0.2 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a {
+  color: var(--terracotta-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+  margin-top: 2.2rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.muted {
+  color: var(--brown-soft);
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-title);
+  line-height: 1.15;
+  color: var(--maroon);
+  font-weight: 600;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  background: var(--terracotta);
+  color: #fff;
+  border: 2px solid var(--terracotta);
+  padding: 0.8rem 1.9rem;
+  border-radius: 999px;
+  font: 500 0.95rem var(--font-body);
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  background: var(--terracotta-dark);
+  border-color: var(--terracotta-dark);
+  text-decoration: none;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--terracotta-dark);
+}
+
+.btn.ghost:hover {
+  background: var(--terracotta);
+  color: #fff;
+}
+
+.btn.small {
+  padding: 0.45rem 1.1rem;
+  font-size: 0.85rem;
+}
+
+/* INPUTS */
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.8rem 1.1rem;
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  font: 0.95rem var(--font-body);
+  color: var(--brown);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--terracotta);
+  border-color: transparent;
+}
